@@ -1,13 +1,14 @@
 import React from 'react'
 
-const Stock = (props) => {
+const MyStock = (props) => {
+  
   const handleClick = () => {
-    props.addToPortfolio(props.stock.id)
+    props.removeFromPortfolio(props.id)
   }
 
   return(
-
-    <div onClick={handleClick} className="card">
+    <div onClick={handleClick}>
+    <div  className="card">
       <div className="card-body">
         <h5 className="card-title">{
             props.stock.name
@@ -18,7 +19,7 @@ const Stock = (props) => {
           }</p>
       </div>
     </div>
-
+    </div> 
 );}
 
-export default Stock
+export default MyStock
