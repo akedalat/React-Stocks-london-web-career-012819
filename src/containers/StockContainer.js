@@ -21,7 +21,7 @@ class StockContainer extends Component {
       <h2>Stocks</h2>
       {
         this.props.stocks.filter(stock => stock.type === this.props.filter).map((stock, index) =>
-        <Stock key={indexlearn} stock={stock} addToPortfolio={this.props.addToPortfolio}/>)
+        <Stock key={index} stock={stock} addToPortfolio={this.props.addToPortfolio}/>)
       }
     </div>
   );
